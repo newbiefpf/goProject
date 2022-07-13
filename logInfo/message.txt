@@ -1,0 +1,4 @@
+
+[logFileTool]2022/07/13 05:06:50 main.go:26: Hello newbie!
+[logFileTool]2022/07/13 05:12:18 main.go:26: Hello newbi阿斯顿飒飒e!
+[logFileTool]2022/07/13 05:12:18 main.go:27: Hello newbie!
