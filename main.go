@@ -5,8 +5,11 @@ package main
  * @Date 22:11 2022/7/3
  **/
 import (
-	"fmt"
+	"flag"
+	"github.com/BurntSushi/toml"
+	"goProject/apis"
 	"goProject/conf"
+	"goProject/db"
 	"log"
 	"os"
 )
@@ -23,10 +26,17 @@ func init() {
 	log.SetFlags(log.LstdFlags | log.Lshortfile | log.LUTC)
 }
 func main() {
-	log.Println("Hello newbie!") // log 还是可以作为输出的前缀
-	if err := conf.Init(); err != nil {
-		log.Printf("conf.Init() err:%+v", err)
+	log.Println("Hello newbie!") // log
+	//读取配置文件
+	var configFile string
+	flag.StringVar(&configFile, "c", "./conf/conf.toml", "config file")
+	log.Printf("读取配置文件: %s ", configFile)
+	if _, err := toml.DecodeFile(configFile, &conf.BlogConfig); err != nil {
+		log.Printf("Failed to load config file: %s err: %s ", configFile, err.Error())
 	}
-	mysqlConf := conf.Conf.Mysql
-	fmt.Println(mysqlConf.DbName)
+	db.InitDB()
+	defer db.DB.Close()
+	//项目启动
+	log.Println("项目启动")
+	apis.Route()
 }

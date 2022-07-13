@@ -4,35 +4,26 @@ package conf
  * @Author newbie
  * @Date 22:11 2022/7/3
  **/
-import (
-	"flag"
-	"github.com/BurntSushi/toml"
-)
-
-var (
-	confPath string
-	// Conf global
-	Conf = &Config{}
-)
-
-// Config .
 type Config struct {
-	Mysql *Mysql
+	Mysql  mysqlConfig  `toml:"mysql"`
+	Server serverConfig `toml:"server"`
 }
 
-type Mysql struct {
-	UserName string
-	Password string
-	IpHost   string
-	DbName   string
+type mysqlConfig struct {
+	Username    string
+	Password    string
+	Dbname      string
+	Host        string
+	Port        int
+	Protocol    string
+	Charset     string
+	MaxIdleConn int
+	MaxOpenConn int
 }
 
-func init() {
-	flag.StringVar(&confPath, "conf", "./conf/conf.toml", "-conf path")
+type serverConfig struct {
+	Env  string
+	Port int
 }
 
-// Init init conf
-func Init() (err error) {
-	_, err = toml.DecodeFile(confPath, &Conf)
-	return
-}
+var BlogConfig Config

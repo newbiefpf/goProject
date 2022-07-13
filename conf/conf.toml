@@ -4,10 +4,17 @@ title = "TOML Example"
 name = "newbie"
 dob = 1979-05-27T07:32:00-08:00 # 日期是一等公民
 
-[Mysql]
-server = "127.0.0.1:3306"
-connection_max = 200
+[mysql]
+host="127.0.0.1"
+port = 3306
 dbname = "blog"
-user = "root"
 password = "root"
-enabled = true
+username = "root"
+protocol = "tcp"
+charset = "utf8"
+maxIdleConn = 5
+maxOpenConn = 10
+
+[server]
+port = 8081
+env = "test"
