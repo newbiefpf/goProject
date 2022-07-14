@@ -1,12 +1,9 @@
 # goProject
-# 基于Gin、Gorm、Vue 实现的在线练习系统
+# 基于Gin、Gorm、Vue 实现的博客网站系统
 
-> 视频链接：https://www.bilibili.com/video/av339992531/
-> 演示地址：http://my.yituomao.com/oj/#/questionList
 > 
 > 后台语言：Golang、框架：Gin、GORM
-> 
-> 前台技术栈：Vue3、Element-plus、vite、typescript
+
 
 ## 参考链接
 GOLANG下载网址： https://golang.google.cn/dl/
@@ -23,17 +20,21 @@ GIN中文官网：https://gin-gonic.com/zh-cn/docs/
 ```text
 // GetProblemList
 // @Tags 公共方法
-// @Summary 问题列表
-// @Param page query int false "page"
-// @Param size query int false "size"
+// @Summary 公共方法
 // @Success 200 {string} json "{"code":"200","msg","","data":""}"
 // @Router /problem-list [get]
 ```
 
-## 安装 jwt
+## 安装jwt 设置token时使用
 ```shell
 go get github.com/dgrijalva/jwt-go
 ```
-
+参考文档 :https://github.com/dgrijalva/jwt-go
+## 使用邮箱发送验证码
+```shell
+go get go get github.com/jordan-wright/email
+```
+参考文档 :https://github.com/jordan-wright/email
+参考文档 :https://blog.51cto.com/u_6192297/5268325
 ## 配置 
 + 将 MailPassword 配置到环境变量中

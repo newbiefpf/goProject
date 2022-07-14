@@ -8,7 +8,7 @@ import (
 type Userinfo struct {
 	gorm.Model
 	Username string `gorm:"column:username;type:varchar(20);" json:"username"`
-	Password string `gorm:"column:password;type:varchar(20);" json:"password"`
+	Password string `gorm:"column:password;type:varchar(200);" json:"password"`
 	Email    string `gorm:"column:email;type:varchar(36);" json:"email"`
 	Age      int    `gorm:"column:age;type:int;" json:"age"`
 	Sex      int    `gorm:"column:sex;type:int;" json:"sex"`

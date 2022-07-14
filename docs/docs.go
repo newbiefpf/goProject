@@ -16,36 +16,65 @@ const docTemplate = `{
     "host": "{{.Host}}",
     "basePath": "{{.BasePath}}",
     "paths": {
-        "/ping1": {
-            "get": {
+        "/login": {
+            "post": {
                 "tags": [
-                    "公共方法"
+                    "接口实现"
                 ],
-                "summary": "问题列表",
+                "summary": "登录",
                 "parameters": [
                     {
-                        "type": "integer",
-                        "description": "page",
-                        "name": "page",
-                        "in": "query"
-                    },
-                    {
-                        "type": "integer",
-                        "description": "size",
-                        "name": "size",
-                        "in": "query"
+                        "type": "string",
+                        "description": "username",
+                        "name": "username",
+                        "in": "formData"
                     },
                     {
                         "type": "string",
-                        "description": "keyword",
-                        "name": "keyword",
-                        "in": "query"
-                    },
+                        "description": "password",
+                        "name": "password",
+                        "in": "formData"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{\"code\":\"200\",\"data\":\"\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/ping": {
+            "get": {
+                "tags": [
+                    "心跳"
+                ],
+                "summary": "测试联通",
+                "responses": {
+                    "200": {
+                        "description": "{\"code\":\"200\",\"data\":\"\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/sendCode": {
+            "post": {
+                "tags": [
+                    "接口实现"
+                ],
+                "summary": "发送验证码",
+                "parameters": [
                     {
                         "type": "string",
-                        "description": "category_identity",
-                        "name": "category_identity",
-                        "in": "query"
+                        "description": "email",
+                        "name": "email",
+                        "in": "formData",
+                        "required": true
                     }
                 ],
                 "responses": {
