@@ -1,7 +1,6 @@
 package models
 
 import (
-	"fmt"
 	"gorm.io/gorm"
 )
 
@@ -18,12 +17,4 @@ type Userinfo struct {
 
 func (table *Userinfo) tableName() string {
 	return "userinfo"
-}
-func GetUser() {
-	userList := make([]*Userinfo, 0)
-	DB.Find(&userList)
-
-	for _, v := range userList {
-		fmt.Printf("data=---->%v", v)
-	}
 }

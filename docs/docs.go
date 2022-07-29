@@ -10,7 +10,16 @@ const docTemplate = `{
     "info": {
         "description": "{{escape .Description}}",
         "title": "{{.Title}}",
-        "contact": {},
+        "termsOfService": "http://swagger.io/terms/",
+        "contact": {
+            "name": "这里写联系人信息",
+            "url": "http://www.swagger.io/support",
+            "email": "support@swagger.io"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
         "version": "{{.Version}}"
     },
     "host": "{{.Host}}",
@@ -49,7 +58,7 @@ const docTemplate = `{
         "/ping": {
             "get": {
                 "tags": [
-                    "心跳"
+                    "A心跳"
                 ],
                 "summary": "测试联通",
                 "responses": {
@@ -64,17 +73,25 @@ const docTemplate = `{
         },
         "/sendCode": {
             "post": {
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
                 "tags": [
                     "接口实现"
                 ],
-                "summary": "发送验证码",
+                "summary": "发送验证码21312",
                 "parameters": [
                     {
-                        "type": "string",
                         "description": "email",
                         "name": "email",
-                        "in": "formData",
-                        "required": true
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
                     }
                 ],
                 "responses": {
@@ -92,12 +109,12 @@ const docTemplate = `{
 
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
-	Version:          "",
-	Host:             "",
-	BasePath:         "",
+	Version:          "1.0",
+	Host:             "localhost:8888",
+	BasePath:         "/",
 	Schemes:          []string{},
-	Title:            "",
-	Description:      "",
+	Title:            "接口文档",
+	Description:      "笔记的后台api",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,
 }
