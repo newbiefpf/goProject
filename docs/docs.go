@@ -10,69 +10,15 @@ const docTemplate = `{
     "info": {
         "description": "{{escape .Description}}",
         "title": "{{.Title}}",
-        "termsOfService": "http://swagger.io/terms/",
-        "contact": {
-            "name": "这里写联系人信息",
-            "url": "http://www.swagger.io/support",
-            "email": "support@swagger.io"
-        },
-        "license": {
-            "name": "Apache 2.0",
-            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
-        },
+        "contact": {},
         "version": "{{.Version}}"
     },
     "host": "{{.Host}}",
     "basePath": "{{.BasePath}}",
     "paths": {
-        "/login": {
-            "post": {
-                "tags": [
-                    "接口实现"
-                ],
-                "summary": "登录",
-                "parameters": [
-                    {
-                        "type": "string",
-                        "description": "username",
-                        "name": "username",
-                        "in": "formData"
-                    },
-                    {
-                        "type": "string",
-                        "description": "password",
-                        "name": "password",
-                        "in": "formData"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "{\"code\":\"200\",\"data\":\"\"}",
-                        "schema": {
-                            "type": "string"
-                        }
-                    }
-                }
-            }
-        },
-        "/ping": {
+        "/FindUserByName": {
             "get": {
-                "tags": [
-                    "A心跳"
-                ],
-                "summary": "测试联通",
-                "responses": {
-                    "200": {
-                        "description": "{\"code\":\"200\",\"data\":\"\"}",
-                        "schema": {
-                            "type": "string"
-                        }
-                    }
-                }
-            }
-        },
-        "/sendCode": {
-            "post": {
+                "description": "根据用户名查询用户信息",
                 "consumes": [
                     "application/json"
                 ],
@@ -80,18 +26,16 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "接口实现"
+                    "用户接口"
                 ],
-                "summary": "发送验证码21312",
+                "summary": "查询用户信息",
                 "parameters": [
                     {
-                        "description": "email",
-                        "name": "email",
-                        "in": "body",
-                        "required": true,
-                        "schema": {
-                            "type": "string"
-                        }
+                        "type": "string",
+                        "description": "用户账户名",
+                        "name": "name",
+                        "in": "path",
+                        "required": true
                     }
                 ],
                 "responses": {
@@ -103,18 +47,57 @@ const docTemplate = `{
                     }
                 }
             }
+        },
+        "/Login": {
+            "post": {
+                "description": "根据用户名查询用户信息",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "用户接口"
+                ],
+                "summary": "查询用户信息",
+                "responses": {
+                    "200": {
+                        "description": "{\"code\":\"200\",\"data\":\"\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/creatUser": {
+            "put": {
+                "description": "创建用户",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "用户接口"
+                ],
+                "summary": "创建用户信息",
+                "responses": {}
+            }
         }
     }
 }`
 
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
-	Version:          "1.0",
-	Host:             "localhost:8888",
-	BasePath:         "/",
+	Version:          "",
+	Host:             "",
+	BasePath:         "",
 	Schemes:          []string{},
-	Title:            "接口文档",
-	Description:      "笔记的后台api",
+	Title:            "",
+	Description:      "",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,
 }

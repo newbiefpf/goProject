@@ -1,58 +1,17 @@
-basePath: /
-host: localhost:8888
 info:
-  contact:
-    email: support@swagger.io
-    name: 这里写联系人信息
-    url: http://www.swagger.io/support
-  description: 笔记的后台api
-  license:
-    name: Apache 2.0
-    url: http://www.apache.org/licenses/LICENSE-2.0.html
-  termsOfService: http://swagger.io/terms/
-  title: 接口文档
-  version: "1.0"
+  contact: {}
 paths:
-  /login:
-    post:
-      parameters:
-      - description: username
-        in: formData
-        name: username
-        type: string
-      - description: password
-        in: formData
-        name: password
-        type: string
-      responses:
-        "200":
-          description: '{"code":"200","data":""}'
-          schema:
-            type: string
-      summary: 登录
-      tags:
-      - 接口实现
-  /ping:
+  /FindUserByName:
     get:
-      responses:
-        "200":
-          description: '{"code":"200","data":""}'
-          schema:
-            type: string
-      summary: 测试联通
-      tags:
-      - A心跳
-  /sendCode:
-    post:
       consumes:
       - application/json
+      description: 根据用户名查询用户信息
       parameters:
-      - description: email
-        in: body
-        name: email
+      - description: 用户账户名
+        in: path
+        name: name
         required: true
-        schema:
-          type: string
+        type: string
       produces:
       - application/json
       responses:
@@ -60,7 +19,33 @@ paths:
           description: '{"code":"200","data":""}'
           schema:
             type: string
-      summary: 发送验证码21312
+      summary: 查询用户信息
       tags:
-      - 接口实现
+      - 用户接口
+  /Login:
+    post:
+      consumes:
+      - application/json
+      description: 根据用户名查询用户信息
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"code":"200","data":""}'
+          schema:
+            type: string
+      summary: 查询用户信息
+      tags:
+      - 用户接口
+  /creatUser:
+    put:
+      consumes:
+      - application/json
+      description: 创建用户
+      produces:
+      - application/json
+      responses: {}
+      summary: 创建用户信息
+      tags:
+      - 用户接口
 swagger: "2.0"

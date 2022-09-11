@@ -1,0 +1,4 @@
+{"client_ip":"::1","latency_time":657800,"level":"info","msg":"","req_method":"PUT","req_uri":"/creatUser","status_code":200,"time":"2022-09-09 09:57:35"}
+{"client_ip":"::1","latency_time":2738100,"level":"info","msg":"","req_method":"PUT","req_uri":"/creatUser","status_code":200,"time":"2022-09-09 10:09:04"}
+{"client_ip":"::1","latency_time":2270500,"level":"info","msg":"","req_method":"PUT","req_uri":"/creatUser","status_code":200,"time":"2022-09-09 10:20:04"}
+{"client_ip":"::1","latency_time":40797268400,"level":"info","msg":"","req_method":"PUT","req_uri":"/creatUser","status_code":200,"time":"2022-09-09 10:22:07"}

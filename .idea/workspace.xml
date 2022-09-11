@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="596ee3a3-c7e8-40d2-9171-06f814b57ea2" name="变更" comment="重构">
+      <change afterPath="$PROJECT_DIR$/api/user/login.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/jwt.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/aboutUser/userControl.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utility/ginResult/ginResult.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utility/jwt.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utility/logutility/logutility.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/app.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/user/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/user/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/initDB.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/initDB.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/docs.go" beforeDir="false" afterPath="$PROJECT_DIR$/docs/docs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/swagger.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/swagger.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/swagger.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/logFile.20220909.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/logMiddleware/middleware.go" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/logMiddleware/middleware.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/tableModel/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/tableModel/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/aboutUser/createUser.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/toml/example.go" beforeDir="false" afterPath="$PROJECT_DIR$/toml/example.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toml/example.toml" beforeDir="false" afterPath="$PROJECT_DIR$/toml/example.toml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file://C:/Program Files/Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/middleware/logMiddleware/middleware.go" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EU15C6dgVlVTxqVCobvWaCtEa6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.formatter.settings.were.checked" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/utility" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\goProject\utility" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build goProject" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goProject" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="goProject" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go 构建.go build goProject" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="重构" />
+    <option name="LAST_COMMIT_MESSAGE" value="重构" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <environment>
+      <map>
+        <entry key="GOPROXY" value="https://goproxy.io" />
+      </map>
+    </environment>
+  </component>
+</project>
