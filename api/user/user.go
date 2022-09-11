@@ -31,7 +31,7 @@ func Ping(c *gin.Context) {
 	c.JSON(200, ginResult.OK.WithData("PING!PING!PING!"))
 }
 
-// FindUserByName 创建用户
+// CreatUser 创建用户
 // @Summary 创建用户信息
 // @Description 创建用户
 // @Tags 用户接口

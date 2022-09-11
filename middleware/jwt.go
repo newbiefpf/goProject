@@ -14,21 +14,13 @@ func JWTAuthMiddleware() gin.HandlerFunc {
 		token := c.Request.Header.Get("Authorization")
 		if token == "" {
 			code = true
-			c.JSON(200, ginResult.OK.WithData("token无效!"))
 		} else {
 			// 解析token
 			claims, err := utility.ParseToken(token)
 			if err != nil {
 				code = true
-				c.JSON(200, ginResult.OK.WithData("token无效!"))
-				c.Abort()
-				return
-
 			} else if time.Now().Unix() > claims.ExpiresAt {
 				code = true
-				c.JSON(200, ginResult.OK.WithData("token过期!"))
-				c.Abort()
-				return
 			}
 		}
 		if code {

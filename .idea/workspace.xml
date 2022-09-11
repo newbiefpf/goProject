@@ -5,27 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="596ee3a3-c7e8-40d2-9171-06f814b57ea2" name="变更" comment="重构">
-      <change afterPath="$PROJECT_DIR$/api/user/login.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware/jwt.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/aboutUser/userControl.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utility/ginResult/ginResult.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utility/jwt.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utility/logutility/logutility.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/article/article.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/tableModel/article.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/app.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/user/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/user/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/initDB.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/initDB.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/docs.go" beforeDir="false" afterPath="$PROJECT_DIR$/docs/docs.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/swagger.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/swagger.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/swagger.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/logFile.20220909.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/logMiddleware/middleware.go" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/logMiddleware/middleware.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/tableModel/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/tableModel/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/aboutUser/createUser.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/toml/example.go" beforeDir="false" afterPath="$PROJECT_DIR$/toml/example.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/toml/example.toml" beforeDir="false" afterPath="$PROJECT_DIR$/toml/example.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/router/routerLogFile.20220911.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/router/routerLogFile.20220911.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/jwt.go" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/jwt.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/dbModel/table.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/dbModel/table.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/aboutUser/userControl.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/aboutUser/userControl.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/jwt.go" beforeDir="false" afterPath="$PROJECT_DIR$/utility/jwt.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +43,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2EU15C6dgVlVTxqVCobvWaCtEa6" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

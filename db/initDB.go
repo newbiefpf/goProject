@@ -23,7 +23,9 @@ func Init() {
 	//创建数据库中的标
 	//var user dbModel.User
 	//var article dbModel.Article
-	//db.AutoMigrate(&user, &article)
+	//var articleLink dbModel.ArticleLink
+	//var discuss dbModel.Discuss
+	//db.AutoMigrate(&user, &article, &articleLink, &discuss)
 	ConnectDb = db
 	//defer db.Close()
 }
