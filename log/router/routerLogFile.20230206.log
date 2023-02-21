@@ -1,0 +1,6 @@
+{"client_ip":"::1","latency_time":1239600,"level":"info","msg":"","req_method":"GET","req_uri":"/swagger/index.html","status_code":200,"time":"2023-02-06 21:46:22"}
+{"client_ip":"::1","latency_time":594000,"level":"info","msg":"","req_method":"GET","req_uri":"/swagger/swagger-ui.css","status_code":200,"time":"2023-02-06 21:46:22"}
+{"client_ip":"::1","latency_time":1263200,"level":"info","msg":"","req_method":"GET","req_uri":"/swagger/swagger-ui-standalone-preset.js","status_code":200,"time":"2023-02-06 21:46:22"}
+{"client_ip":"::1","latency_time":3199100,"level":"info","msg":"","req_method":"GET","req_uri":"/swagger/swagger-ui-bundle.js","status_code":200,"time":"2023-02-06 21:46:22"}
+{"client_ip":"::1","latency_time":1025100,"level":"info","msg":"","req_method":"GET","req_uri":"/swagger/doc.json","status_code":200,"time":"2023-02-06 21:46:23"}
+{"client_ip":"::1","latency_time":2068200,"level":"info","msg":"","req_method":"GET","req_uri":"/swagger/favicon-32x32.png","status_code":200,"time":"2023-02-06 21:46:23"}
